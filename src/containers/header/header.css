@@ -1,0 +1,35 @@
+body {
+  background-image: url('../../assets/clean_house.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 350px;
+  padding-left: 130px;
+}
+
+.header_content h1 {
+  text-align: center;
+  font-size: 75px;
+  color: whitesmoke;
+  font-weight: 350;
+  margin-bottom: 3px;
+
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+  border-bottom: none;
+  padding: 10px; /* Adjust the padding as needed */
+}
+.header_content h2 {
+  text-align: center;
+  font-size: 50px;
+  color: whitesmoke;
+  font-weight: 300;
+  margin-top: 5px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+  border-top: none;
+}

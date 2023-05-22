@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
-  align-items: center;
-
-  padding-right: 100px;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
 }
 
 .navbar-nav {
@@ -16,19 +16,16 @@
 .nav-item {
   display: inline-block;
   margin-right: 100px;
+  padding-top: 30px;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #696969;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 .nav-link:hover {
   color: #555;
-}
-
-.navbar-logo {
-  margin-left: 50px;
-  width: 300px;
 }
