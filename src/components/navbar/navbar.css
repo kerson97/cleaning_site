@@ -1,8 +1,11 @@
 .navbar {
   display: flex;
   align-items: flex-end;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 2;
+  font-family: Abel;
+  letter-spacing: 3px;
 }
 
 .navbar-nav {
@@ -24,8 +27,9 @@
   color: #ffffff;
   font-weight: normal;
   font-size: 20px;
+  transition: color 0.3s ease; /* Adjust the transition duration and timing function */
 }
 
 .nav-link:hover {
-  color: #555;
+  color: #aea7a7; /* Adjust the desired color on hover */
 }
