@@ -11,8 +11,11 @@ const Header = () => {
         <div className='header_content'>
           <div className='sides'>
             <div className='header_left'>
-              <h1>Spotless Clean</h1>
-              <h2>Your space, cleaned your way.</h2>
+              <h1>Spotless Cleaning</h1>
+              <h2>
+                Providing luxurious cleaning at affordable prices to Greater
+                Victoria.
+              </h2>
             </div>
 
             <div className='header_right'>

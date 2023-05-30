@@ -5,13 +5,12 @@
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 100vh; /* Adjust the height as needed */
+  height: 100vh;
 }
 
 .parallax-content {
   position: relative;
   z-index: 2;
-  /* Add styling for your header text content */
 }
 
 .parallax-bg {

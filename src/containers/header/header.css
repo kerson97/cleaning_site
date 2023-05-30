@@ -17,6 +17,7 @@
   padding-right: 100px;
   border: 8px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
+  background-color: rgba(36, 36, 36, 0.5);
 }
 
 .header_left h1 {
@@ -28,7 +29,7 @@
   text-align: center;
   font-size: 50px;
   font-weight: 300;
-  padding: 10px;
+  margin: 0;
 }
 .header_right {
   display: flex;
@@ -37,6 +38,8 @@
   border: 8px solid rgba(255, 255, 255, 0.5);
   border-left: none;
   padding: 50px;
+  background-color: rgba(36, 36, 36, 0.5);
+  width: 25%;
 }
 
 .header_right h1 {
