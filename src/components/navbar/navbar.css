@@ -27,9 +27,9 @@
   color: #ffffff;
   font-weight: normal;
   font-size: 20px;
-  transition: color 0.3s ease; /* Adjust the transition duration and timing function */
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #aea7a7; /* Adjust the desired color on hover */
+  color: #aea7a7;
 }

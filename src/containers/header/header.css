@@ -5,45 +5,42 @@
   padding-left: 130px;
   font-family: Abel;
   letter-spacing: 3px;
+  color: whitesmoke;
 }
 
-.left {
+.header_left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 50%;
   padding-right: 100px;
-  border: 8px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
-  padding: 10px; /* Adjust the padding as needed */
-}
-
-.left h1 {
-  text-align: center;
-  font-size: 75px;
-  color: whitesmoke;
-  font-weight: 600;
-  margin-bottom: 3px;
-}
-.left h2 {
-  text-align: center;
-  font-size: 50px;
-  color: whitesmoke;
-  font-weight: 300;
-  margin-top: 5px;
+  border: 8px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
 }
-.right {
+
+.header_left h1 {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 600;
+}
+.header_left h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  padding: 10px;
+}
+.header_right {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 8px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
-  padding: 50px; /* Adjust the padding as needed */
+  border: 8px solid rgba(255, 255, 255, 0.5);
+  border-left: none;
+  padding: 50px;
 }
 
-.right h1 {
+.header_right h1 {
   text-align: center;
   font-size: 75px;
-  color: whitesmoke;
   font-weight: 300;
 }

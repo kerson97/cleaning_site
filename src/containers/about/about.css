@@ -1,5 +1,29 @@
+.about_sides {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 130px;
+  margin-top: 100px;
+  font-family: Abel;
+  letter-spacing: 3px;
+}
+
 .about_content {
   background-color: #262626;
+  min-height: 100vh;
+}
 
-  height: -100vh; /* Adjust the height as needed */
+.about_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 38%;
+  padding: 10px; /* Adjust the padding as needed */
+  box-sizing: border-box;
+  border: 8px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+}
+
+.about_left img {
+  max-width: 100%;
+  height: auto;
 }
