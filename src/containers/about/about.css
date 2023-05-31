@@ -108,6 +108,13 @@
   border-top: 0;
 }
 
+.bottom_squares {
+  display: flex;
+  padding-right: 130px;
+  padding-left: 130px;
+  font-size: 35px;
+}
+
 .square:not(:last-child) {
   border-right: none;
 }

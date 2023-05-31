@@ -39,6 +39,14 @@ const About = () => {
             <div className='content'>Square Content</div>
           </div>
         </div>
+        <div className='bottom_squares'>
+          <div className='square'>
+            <div className='content'>Square Content</div>
+          </div>
+          <div className='square'>
+            <div className='content'>Square Content</div>
+          </div>
+        </div>
       </div>
     </div>
   )
