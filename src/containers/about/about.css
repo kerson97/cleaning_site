@@ -1,7 +1,14 @@
 .about_content {
   margin-top: -120px;
+  color: whitesmoke;
 }
 
+.about_sides,
+.about_left,
+.about_right,
+.squares {
+  box-sizing: border-box;
+}
 .about_sides {
   display: flex;
   justify-content: flex-start;
@@ -9,7 +16,8 @@
   margin-top: 100px;
   font-family: Abel;
   letter-spacing: 3px;
-  color: whitesmoke;
+  width: 100%; /* Adjusted width */
+  padding-right: 130px;
 }
 
 .about_content {
@@ -21,16 +29,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 40%;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 8px solid rgba(255, 255, 255, 0.5);
+  width: 50%; /* Adjusted width */
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  justify-content: flex-start; /* Adjusted alignment */
 }
 
 .about_left img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .about_right {
@@ -38,12 +44,38 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 8px solid rgba(255, 255, 255, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.5);
   border-left: none;
-  width: 40%;
-  padding: 50px;
+  width: 50%;
   font-size: 40px;
   font-weight: normal;
+  position: relative;
+}
+
+.about_right h1 {
+  margin-bottom: 0px; /* Adjust the value as needed */
+  font-size: 55px;
+}
+
+.about_right button {
+  width: 50%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the button horizontally */
+  margin-top: 20px;
+  background-color: #9a8a78;
+
+  font-family: Abel;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.about_right button:hover {
+  cursor: pointer;
+  background-color: #b3a89a;
 }
 
 .list {
@@ -58,5 +90,34 @@
   display: inline-block;
   width: 1em;
   margin-right: 0.5em;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.squares {
+  display: flex;
+  width: 100%;
+  padding-right: 130px;
+  padding-left: 130px;
+  font-size: 35px;
+}
+
+.square {
+  flex: 1;
+  height: 200px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-top: 0;
+}
+
+.square:not(:last-child) {
+  border-right: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-family: Abel;
+  letter-spacing: 3px;
 }

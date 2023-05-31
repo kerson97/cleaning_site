@@ -5,7 +5,7 @@ class CleaningForm extends React.Component {
   render() {
     return (
       <div className='form-container'>
-        <h2>Get Instant Quote</h2>
+        <h2>Instant Price Estimation</h2>
         <form>
           <div className='form-group'>
             <label htmlFor='house-type' className='form-label'>

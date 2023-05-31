@@ -1,8 +1,7 @@
 .form-container {
-  max-width: 400px;
-  margin: 0 auto;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
 }
 
 .form-container h2 {
@@ -21,22 +20,21 @@ label {
 }
 
 .form-select,
-.form-textarea {
+.form-textarea,
+.form-submit {
   width: 100%;
   padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .form-submit {
   background-color: #4caf50;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  margin-top: 10px; /* Add margin-top to separate from other form elements */
 }
 
 .form-submit:hover {
   background-color: #45a049;
+  cursor: pointer;
 }
