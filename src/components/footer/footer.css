@@ -11,19 +11,18 @@
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.footer-section {
-  flex-basis: 30%;
-  margin-bottom: 20px;
+.footer-section:first-child {
+  margin-right: 20px; /* Adjusted horizontal spacing */
 }
 
-.footer-section:not(:last-child) {
-  margin-right: 50px; /* Increased horizontal spacing */
+.footer-section:nth-child(2) {
+  margin-left: 20px; /* Adjusted horizontal spacing */
 }
 
 .footer h3 {

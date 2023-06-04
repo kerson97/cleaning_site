@@ -1,18 +1,17 @@
 import React from 'react'
 import './footer.css'
 
+import {
+  faEnvelope,
+  faPhone,
+  faLocationPin,
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer-container'>
-        <div className='footer-section'>
-          <h3>About Us</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
-            massa vitae ligula pretium pharetra.
-          </p>
-        </div>
-
         <div className='footer-section'>
           <h3>Services</h3>
           <ul>
@@ -25,9 +24,21 @@ const Footer = () => {
 
         <div className='footer-section'>
           <h3>Contact Us</h3>
-          <p>Victoria, BC, Canada</p>
-          <p>Phone: (250)-878-8599</p>
-          <p>Email: book.spotless@gmail.com</p>
+          <p>
+            <FontAwesomeIcon
+              icon={faLocationPin}
+              style={{ color: '#ffffff' }}
+            />
+            <span> : Victoria, BC, Canada</span>
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faPhone} style={{ color: '#ffffff' }} />
+            <span> : (250)-878-8599</span>
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faEnvelope} style={{ color: '#ffffff' }} />
+            <span> : book.spotless@gmail.com</span>
+          </p>
         </div>
       </div>
       <div className='footer-bottom'>
