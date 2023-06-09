@@ -22,7 +22,7 @@
 
 .about_content {
   background-color: #262626;
-  min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 .about_left {
@@ -37,6 +37,7 @@
 .about_left img {
   max-width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .about_right {
@@ -97,6 +98,7 @@
   padding-right: 130px;
   padding-left: 130px;
   font-size: 35px;
+  text-align: center;
 }
 
 .square {
