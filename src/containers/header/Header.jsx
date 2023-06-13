@@ -11,10 +11,9 @@ const Header = () => {
         <div className='header_content'>
           <div className='sides'>
             <div className='header_left'>
-              <h1>Spotless Cleaning</h1>
+              <h1>SPOTLESS.</h1>
               <h2>
-                Bringing luxurious cleaning at affordable prices to Greater
-                Victoria.
+                Bringing luxurious, affordable cleaning to Greater Victoria.
               </h2>
             </div>
 

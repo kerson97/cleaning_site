@@ -9,6 +9,7 @@ import {
   faHandSparkles,
   faCouch,
   faCommentDollar,
+  faPiggyBank,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -32,13 +33,13 @@ const About = () => {
           <img src={sink} alt='sink' />
         </div>
         <div className='about_right'>
-          <h1>Why spotless?</h1>
+          <h1>Why choose spotless?</h1>
           <ul className='list'>
             {generateListItem('Family owned and operated')}
-            {generateListItem('Experienced, trusted cleaners')}
+            {generateListItem('Experienced, reliable cleaners')}
+            {generateListItem('Swift booking process')}
             {generateListItem('Competitive pricing')}
-            {generateListItem('Book cleans easily with our web-app')}
-            {generateListItem('Cleaning updates to your phone or email')}
+            {generateListItem('Customizable packages')}
             <button>Book Now!</button>
           </ul>
         </div>
@@ -52,6 +53,7 @@ const About = () => {
               size='2xl'
               style={{ color: '#ffffff' }}
             />
+            <br />
             Order Online
           </div>
         </div>
@@ -63,6 +65,7 @@ const About = () => {
               size='2xl'
               style={{ color: '#ffffff' }}
             />
+            <br />
             Receive Updates
           </div>
         </div>
@@ -73,6 +76,7 @@ const About = () => {
               size='2xl'
               style={{ color: '#ffffff' }}
             />
+            <br />
             We Clean
           </div>
         </div>
@@ -83,6 +87,7 @@ const About = () => {
               size='2xl'
               style={{ color: '#ffffff' }}
             />
+            <br />
             You Relax
           </div>
         </div>
@@ -93,23 +98,34 @@ const About = () => {
               size='2xl'
               style={{ color: '#ffffff' }}
             />
-            Leave Feedback & Earn Points!
+            <br />
+            Leave Feedback
+          </div>
+        </div>
+
+        <div className='square'>
+          <div className='content'>
+            <FontAwesomeIcon
+              icon={faPiggyBank}
+              size='2xl'
+              style={{ color: '#ffffff' }}
+            />
+            <br />
+            Earn Points!
           </div>
         </div>
       </div>
-      <div className='bottom_squares'>
-        <div className='square'>
+      <div className='about_sides'>
+        <div className='about_left'>
           <img src={cleaner} alt='cleaner' />
         </div>
-        <div className='square'>
-          <div className='content'>
-            <h1>Our cleaners are:</h1>
-            <ul className='list'>
-              {generateListItem('Background checked')}
-              {generateListItem('Industry Professionals')}
-              {generateListItem('Passionate about cleanliness')}
-            </ul>
-          </div>
+        <div className='about_right'>
+          <h1>Our cleaners are:</h1>
+          <ul className='list'>
+            {generateListItem('Background and reference checked')}
+            {generateListItem('Industry professionals')}
+            {generateListItem('Passionate about cleanliness')}
+          </ul>
         </div>
       </div>
     </div>
