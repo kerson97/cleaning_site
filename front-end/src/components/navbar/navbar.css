@@ -27,7 +27,23 @@
   color: #ffffff;
   font-weight: normal;
   font-size: 20px;
+  position: relative; /* Add relative positioning */
   transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -8px; /* Adjust the position to be below the text */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff; /* Customize the color of the underline */
+  transition: width 0.5s; /* Animation duration */
+}
+
+.nav-link.active::after {
+  width: 100%;
 }
 
 .nav-link:hover {
