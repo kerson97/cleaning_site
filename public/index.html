@@ -53,48 +53,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
-    <script>
-      // JavaScript code for parallax effect
-      window.addEventListener('scroll', function () {
-        const parallaxBg = document.querySelector('.parallax-bg')
-        const scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop
-        parallaxBg.style.transform = `translateY(-${
-          scrollTop * 0.15
-        }px)` /* Adjust the factor for desired scrolling speed */
-      })
-    </script>
-
-    <script>
-      // Function to calculate the quote based on the form inputs
-      function calculateQuote() {
-        // Get the selected house type, square footage, and number of bedrooms
-        var houseType = document.getElementById('house-type').value
-        var squareFeet = parseInt(document.getElementById('square-feet').value)
-        var bedrooms = parseInt(document.getElementById('bedrooms').value)
-
-        // Perform your quote calculation logic based on the inputs
-        // Replace the following line with your actual quote calculation
-        var basePrice = 0.1 * squareFeet // Dummy base price for square footage
-        var bedroomPrice = 20 * bedrooms // $20 per bedroom
-        var quotePrice = basePrice + bedroomPrice
-
-        // Update the submit button text with the quote price
-        var submitButton = document.getElementById('submit-button')
-        submitButton.textContent =
-          'Submit (Quote: $' + quotePrice.toFixed(2) + ')'
-      }
-
-      // Add event listener for form submission
-      var quoteForm = document.getElementById('quote-form')
-      quoteForm.addEventListener('submit', function (event) {
-        event.preventDefault() // Prevent form submission
-
-        calculateQuote() // Call the function to calculate and update the quote
-
-        // Perform other actions or submit the form as needed
-      })
-    </script>
   </body>
 </html>

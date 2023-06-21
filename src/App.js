@@ -2,16 +2,30 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import './index.css'
-
-import { About, Header, Services, Contact } from './containers'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { About, Header, Services, Contact, Book } from './containers'
 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/book' element={<Book />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
+  )
+}
+
+function HomePage() {
+  return (
+    <div>
       <Header />
       <About />
-      <Footer />
     </div>
   )
 }

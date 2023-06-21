@@ -42,13 +42,13 @@
   border: 5px solid rgba(255, 255, 255, 0.5);
   border-left: none;
   width: 30%;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: normal;
 }
 
 .about_content h1 {
   margin-bottom: 0px; /* Adjust the value as needed */
-  font-size: 55px;
+  font-size: 40px;
 }
 
 .about_right button {
@@ -65,12 +65,15 @@
   font-family: Abel;
   letter-spacing: 3px;
   font-size: 20px;
+  font-weight: 500;
   color: whitesmoke;
+  transition: background-color 0.5s ease;
 }
 
 .about_right button:hover {
   cursor: pointer;
   background-color: #b3a89a;
+  color: black;
 }
 
 .list {

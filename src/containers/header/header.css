@@ -22,12 +22,13 @@
 
 .header_left h1 {
   text-align: center;
-  font-size: 75px;
+  font-size: 65px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 .header_left h2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
   margin: 0;
 }
@@ -40,10 +41,4 @@
   padding: 25px;
   background-color: rgba(36, 36, 36, 0.5);
   width: 25%;
-}
-
-.header_right h1 {
-  text-align: center;
-  font-size: 75px;
-  font-weight: 300;
 }

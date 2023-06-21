@@ -38,8 +38,8 @@ const About = () => {
             {generateListItem('Family owned and operated')}
             {generateListItem('Experienced, reliable cleaners')}
             {generateListItem('Swift booking process')}
-            {generateListItem('Competitive pricing')}
-            {generateListItem('Customizable packages')}
+            {generateListItem('Competitive pricing, get more for less!')}
+            {generateListItem('Customizeable packages')}
             <button>Book Now!</button>
           </ul>
         </div>
@@ -54,7 +54,7 @@ const About = () => {
               style={{ color: '#ffffff' }}
             />
             <br />
-            Order Online
+            Book Online
           </div>
         </div>
 

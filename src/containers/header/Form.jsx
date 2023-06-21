@@ -6,9 +6,14 @@ class CleaningForm extends React.Component {
     super(props)
     this.state = {
       quotePrice: null,
-      houseType: '0-1000',
+      houseType: '100',
       bathrooms: '1',
+      frequency: 'weekly',
     }
+  }
+
+  componentDidMount() {
+    this.calculateQuote()
   }
 
   handleInputChange = (event) => {
@@ -17,11 +22,11 @@ class CleaningForm extends React.Component {
   }
 
   calculateQuote = () => {
-    const { houseType, bathrooms } = this.state
+    const { houseType, bathrooms, frequency } = this.state
     // Perform your quote calculation logic based on the selected options
     // Replace the following lines with your actual quote calculation
 
-    const additionalPrices = {
+    const houseFees = {
       100: 100,
       116: 116,
       132: 132,
@@ -35,10 +40,18 @@ class CleaningForm extends React.Component {
       400: 400,
       438: 438,
     }
-    const additionalPrice = additionalPrices[houseType] || 0
+    const houseFee = houseFees[houseType] || 0
+
+    const frequencyFees = {
+      weekly: 5,
+      biweekly: 10,
+      monthly: 20,
+      oneTime: 30,
+    }
+    const frequencyFee = frequencyFees[frequency] || 0
 
     const bathroomPrice = 12 * parseInt(bathrooms) // $10 per bathroom
-    const quotePrice = bathroomPrice + additionalPrice
+    const quotePrice = bathroomPrice + houseFee + frequencyFee
     this.setState({ quotePrice: quotePrice.toFixed(2) })
   }
 
@@ -47,7 +60,7 @@ class CleaningForm extends React.Component {
 
     return (
       <div className='form-container'>
-        <h2>Instant Price Estimation</h2>
+        <h2>Instant Quote</h2>
         <form id='quote-form'>
           <div className='form-group'>
             <label htmlFor='houseType'>House Type:</label>
@@ -98,21 +111,21 @@ class CleaningForm extends React.Component {
               Frequency:
             </label>
             <select
-              id='house-type'
-              name='houseType'
+              id='frequency'
+              name='frequency'
               className='form-select'
               onChange={this.handleInputChange}
             >
               <option value='weekly'>Weekly</option>
               <option value='biweekly'>Bi-Weekly</option>
               <option value='monthly'>Monthly</option>
-              <option value='monthly'>One Time Service</option>
+              <option value='oneTime'>One Time Service</option>
             </select>
           </div>
 
           <div className='form-group'>
             <button type='submit' className='form-submit'>
-              Submit {quotePrice && `(Quote: $${quotePrice})`}
+              Book Spotless {quotePrice && `($${quotePrice} Clean)`}
             </button>
           </div>
         </form>

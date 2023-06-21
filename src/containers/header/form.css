@@ -24,17 +24,25 @@ label {
 .form-submit {
   width: 100%;
   padding: 8px;
-  border-radius: 8px;
   box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .form-submit {
-  background-color: #4caf50;
+  background-color: #9a8a78;
   color: white;
   margin-top: 10px; /* Add margin-top to separate from other form elements */
+  font-size: 20px;
+  font-family: Abel;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-weight: 500;
+  color: whitesmoke;
+  transition: background-color 0.5s ease;
+  padding: 10px;
 }
 
 .form-submit:hover {
-  background-color: #45a049;
   cursor: pointer;
+  background-color: #b3a89a;
+  color: black;
 }
