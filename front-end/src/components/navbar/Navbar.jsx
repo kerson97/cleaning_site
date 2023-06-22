@@ -1,16 +1,29 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const [activeOption, setActiveOption] = useState('')
+  const navigate = useNavigate()
 
   const handleOptionClick = (option) => {
     setActiveOption(option)
   }
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const getNavOptionClass = (option) => {
     return option === activeOption ? 'nav-link active' : 'nav-link'
+  }
+
+  const handleAboutClick = () => {
+    handleOptionClick('/about')
+    navigate('/', { state: { scrollTo: 'about' } })
   }
 
   return (
@@ -26,13 +39,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li className='nav-item'>
-          <Link
-            to='/about'
-            className={getNavOptionClass('/about')}
-            onClick={() => handleOptionClick('/about')}
+          <a
+            href='#about'
+            className={getNavOptionClass('/about') + ' nav-about'}
+            onClick={handleAboutClick}
           >
             About
-          </Link>
+          </a>
         </li>
         <li className='nav-item'>
           <Link
@@ -58,8 +71,7 @@ const Navbar = () => {
             className={getNavOptionClass('/book')}
             onClick={() => handleOptionClick('/book')}
           >
-            BOOK <br />
-            SPOTLESS
+            <b>BOOK SPOTLESS</b>
           </Link>
         </li>
       </ul>

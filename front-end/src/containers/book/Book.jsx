@@ -30,6 +30,7 @@ const Book = () => {
 
   return (
     <div className='book_content'>
+      <div className='parallax-bg'></div>
       <BookCleaningForm />
     </div>
   )

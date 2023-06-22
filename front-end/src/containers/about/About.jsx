@@ -12,6 +12,7 @@ import {
   faPiggyBank,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const generateListItem = (text) => {
@@ -40,7 +41,9 @@ const About = () => {
             {generateListItem('Swift booking process')}
             {generateListItem('Competitive pricing, get more for less!')}
             {generateListItem('Customizeable packages')}
-            <button>Book Now!</button>
+            <Link to='/book' style={{ textDecoration: 'none' }}>
+              <button>Book Now!</button>
+            </Link>
           </ul>
         </div>
       </div>

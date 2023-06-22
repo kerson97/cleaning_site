@@ -22,30 +22,39 @@
   padding-top: 30px;
 }
 
-.nav-link {
+.nav-link,
+.nav-about {
   text-decoration: none;
   color: #ffffff;
   font-weight: normal;
   font-size: 20px;
-  position: relative; /* Add relative positioning */
+  position: relative;
   transition: color 0.3s ease;
 }
 
-.nav-link::after {
+.nav-link::after,
+.nav-about::after {
   content: '';
   position: absolute;
-  bottom: -8px; /* Adjust the position to be below the text */
+  bottom: -8px;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #ffffff; /* Customize the color of the underline */
-  transition: width 0.5s; /* Animation duration */
+  background-color: #ffffff;
+  transition: width 0.5s;
 }
 
 .nav-link.active::after {
   width: 100%;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-about:hover {
   color: #aea7a7;
+  transition: color 0.3s ease, width 0.5s;
+}
+
+.nav-link:hover::after,
+.nav-about:hover::after {
+  width: 100%;
 }

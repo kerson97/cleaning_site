@@ -1,6 +1,6 @@
 import React from 'react'
 import './form.css'
-
+import { Link } from 'react-router-dom'
 class CleaningForm extends React.Component {
   constructor(props) {
     super(props)
@@ -50,7 +50,7 @@ class CleaningForm extends React.Component {
     }
     const frequencyFee = frequencyFees[frequency] || 0
 
-    const bathroomPrice = 12 * parseInt(bathrooms) // $10 per bathroom
+    const bathroomPrice = 12 * parseInt(bathrooms) || 0 // $10 per bathroom
     const quotePrice = bathroomPrice + houseFee + frequencyFee
     this.setState({ quotePrice: quotePrice.toFixed(2) })
   }
@@ -61,7 +61,7 @@ class CleaningForm extends React.Component {
     return (
       <div className='form-container'>
         <h2>Instant Quote</h2>
-        <form id='quote-form'>
+        <form id='quote-form' onSubmit={this.handleSubmit}>
           <div className='form-group'>
             <label htmlFor='houseType'>House Type:</label>
             <select
@@ -124,9 +124,11 @@ class CleaningForm extends React.Component {
           </div>
 
           <div className='form-group'>
-            <button type='submit' className='form-submit'>
-              Book Spotless {quotePrice && `($${quotePrice} Clean)`}
-            </button>
+            <Link to='/book'>
+              <button type='submit' className='form-submit'>
+                Book Spotless {quotePrice && `($${quotePrice} Clean)`}
+              </button>
+            </Link>
           </div>
         </form>
       </div>
