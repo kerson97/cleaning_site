@@ -2,7 +2,7 @@ export function initParallax() {
   const homepagePath = '/'
   const currentPath = window.location.pathname
 
-  if (currentPath === homepagePath) {
+  if (currentPath.startsWith(homepagePath)) {
     const parallaxBg = document.querySelector('.parallax-bg')
 
     window.addEventListener('scroll', function () {

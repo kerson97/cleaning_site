@@ -1,19 +1,13 @@
-import { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { About, Header, Services, Contact, Book } from './containers'
+import './App.css'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
-import './App.css'
+import './index.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { About, Header, Services, Contact, Book } from './containers'
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    setIsLoaded(true)
-  }, [])
-
   return (
-    <div className={`App ${isLoaded ? 'fade-in' : 'fade-in'}`}>
+    <div className='App'>
       <Router>
         <Navbar />
         <Routes>
