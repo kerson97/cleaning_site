@@ -20,7 +20,7 @@ const About = () => {
       <li>
         <FontAwesomeIcon
           icon={faCheck}
-          style={{ color: '#ffffff', marginRight: '15px' }}
+          style={{ color: '#ffffff', marginRight: '15px', marginLeft: '15px' }}
         />
         {text}
       </li>
@@ -39,8 +39,8 @@ const About = () => {
             {generateListItem('Family owned and operated')}
             {generateListItem('Experienced, reliable cleaners')}
             {generateListItem('Swift booking process')}
-            {generateListItem('Small, dedicated team')}
-            {generateListItem('Customizeable, affordable packages')}
+            {generateListItem('Competitive pricing')}
+            {generateListItem('Customizeable packages')}
             <Link to='/book' style={{ textDecoration: 'none' }}>
               <button>Book Now!</button>
             </Link>

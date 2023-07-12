@@ -2,7 +2,11 @@
   display: flex;
   justify-content: flex-start;
   margin-top: 20vh;
+  margin-bottom: 20vh;
   padding-left: 130px;
+  font-family: Abel;
+  letter-spacing: 3px;
+  color: whitesmoke;
 }
 
 .header_left {
