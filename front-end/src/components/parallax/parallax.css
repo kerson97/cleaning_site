@@ -1,0 +1,22 @@
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 2;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 120vh;
+  background-image: url('../../assets/clean_house.jpg');
+  background-size: cover;
+
+  z-index: -1;
+}

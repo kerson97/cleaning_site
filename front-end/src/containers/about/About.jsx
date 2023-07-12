@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import sink from '../../assets/sink.jpg'
+import tub from '../../assets/tub.jpg'
 import cleaner from '../../assets/cleaner.jpg'
 import {
   faCheck,
@@ -31,7 +31,7 @@ const About = () => {
     <div className='about_content' id='about'>
       <div className='about_sides'>
         <div className='about_left'>
-          <img src={sink} alt='sink' />
+          <img src={tub} alt='tub' />
         </div>
         <div className='about_right'>
           <h1>Why choose spotless?</h1>
@@ -39,8 +39,8 @@ const About = () => {
             {generateListItem('Family owned and operated')}
             {generateListItem('Experienced, reliable cleaners')}
             {generateListItem('Swift booking process')}
-            {generateListItem('Competitive pricing, get more for less!')}
-            {generateListItem('Customizeable packages')}
+            {generateListItem('Small, dedicated team')}
+            {generateListItem('Customizeable, affordable packages')}
             <Link to='/book' style={{ textDecoration: 'none' }}>
               <button>Book Now!</button>
             </Link>

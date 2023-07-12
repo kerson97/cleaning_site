@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
-import { initParallax } from './parallax.js'
+import { initParallax } from '../../components/parallax/parallax'
 import { calculateQuote } from './quoteCalculator.js'
 import './header.css'
+import '../../components/parallax/parallax.css'
 import HouseCleaningForm from './Form'
 
 const Header = () => {
@@ -22,7 +23,7 @@ const Header = () => {
       <div className='parallax-content'></div>
       <div className='header'>
         <div className='header_content'>
-          <div className='sides'>
+          <div className='sides font_style'>
             <div className='header_left'>
               <h1>SPOTLESS.</h1>
               <h2>

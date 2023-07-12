@@ -5,8 +5,7 @@
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.35);
   border-radius: 5px;
-  width: 80%;
-  max-width: 800px;
+  width: 100%; /* Updated width value */
   margin: 0 auto;
 }
 
@@ -64,7 +63,7 @@
 }
 
 .book-form-submit {
-  background-color: #9a8a78;
+  background-color: #45b7f5;
   color: white;
   margin-top: 10px;
   font-size: 20px;

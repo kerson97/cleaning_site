@@ -4,8 +4,6 @@
   position: absolute;
   width: 100%;
   z-index: 2;
-  font-family: Abel;
-  letter-spacing: 3px;
 }
 
 .navbar-nav {
@@ -25,9 +23,9 @@
 .nav-link,
 .nav-about {
   text-decoration: none;
-  color: #ffffff;
-  font-weight: normal;
-  font-size: 20px;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.5vw;
   position: relative;
   transition: color 0.3s ease;
 }

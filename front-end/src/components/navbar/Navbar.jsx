@@ -27,7 +27,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='navbar'>
+    <nav className='navbar font_style'>
       <ul className='navbar-nav'>
         <li className='nav-item'>
           <Link

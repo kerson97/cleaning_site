@@ -6,13 +6,13 @@
 
   color: whitesmoke;
   padding-bottom: 100px;
-  background-color: #2b4865;
+  padding-top: 20px;
+  background-color: #262626;
 
   font-family: Abel;
   letter-spacing: 3px;
   font-size: 20px;
   color: whitesmoke;
-  height: 100vh;
 }
 
 .about_sides {
@@ -33,7 +33,6 @@
 .about_content img {
   max-width: 100%;
   max-height: auto;
-  object-fit: cover;
 }
 
 .about_right {
@@ -44,14 +43,14 @@
   border: 5px solid rgba(255, 255, 255, 0.5);
   border-left: none;
   border-radius: 10px;
-  width: 30%;
-  font-size: 30px;
+  width: 40%;
   font-weight: normal;
 }
 
 .about_content h1 {
   margin-bottom: 0px; /* Adjust the value as needed */
   font-size: 40px;
+  text-align: center;
 }
 
 .about_right button {
@@ -82,7 +81,7 @@
 .list {
   list-style-type: none;
   padding: 0;
-  font-size: 35px;
+  font-size: 2vw;
 }
 
 .list li:before {
@@ -95,7 +94,7 @@
   display: flex;
   font-size: 25px;
   text-align: center;
-  width: 60.65%;
+  width: 70.5%;
 }
 
 .square {
@@ -105,8 +104,4 @@
   border-radius: 10px;
   width: 100%;
   padding: 15px;
-}
-
-.square:not(:last-child) {
-  border-right: none;
 }

@@ -126,7 +126,7 @@ class CleaningForm extends React.Component {
           <div className='form-group'>
             <Link to='/book'>
               <button type='submit' className='form-submit'>
-                Book Spotless {quotePrice && `($${quotePrice} Clean)`}
+                BOOK SPOTLESS {quotePrice && `(~$${quotePrice})`}
               </button>
             </Link>
           </div>

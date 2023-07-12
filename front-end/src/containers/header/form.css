@@ -4,16 +4,19 @@
   border-radius: 5px;
 }
 
+.form-group {
+  padding-bottom: 5px;
+}
+
 .form-container h2 {
-  color: whitesmoke;
   text-align: center;
+  font-size: 2vw;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: whitesmoke;
 }
 
 .form-select,
@@ -23,22 +26,6 @@ label {
   box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
-.form-submit {
-  background-color: #9a8a78;
-  color: white;
-  margin-top: 10px; /* Add margin-top to separate from other form elements */
-  font-size: 20px;
-  font-family: Abel;
-  letter-spacing: 3px;
-  font-size: 25px;
-  font-weight: 500;
-  color: whitesmoke;
-  transition: background-color 0.5s ease;
-  padding: 20px 20px;
-}
-
-.form-submit:hover {
-  cursor: pointer;
-  background-color: #b3a89a;
-  color: black;
+.form-group button {
+  font-size: 1.5vw;
 }

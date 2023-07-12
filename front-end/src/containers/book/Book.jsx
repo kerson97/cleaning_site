@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './book.css'
 import BookCleaningForm from './BookForm'
+import '../../components/parallax/parallax.css'
+import { initParallax } from '../../components/parallax/parallax'
 
 const Book = () => {
   const [quotePrice, setQuotePrice] = useState(null)
@@ -12,6 +14,7 @@ const Book = () => {
   }
 
   useEffect(() => {
+    initParallax()
     // Add event listener for form submission
     const handleSubmit = (event) => {
       event.preventDefault() // Prevent form submission
@@ -30,8 +33,11 @@ const Book = () => {
 
   return (
     <div className='book_content'>
-      <div className='parallax-bg'></div>
-      <BookCleaningForm />
+      <div className='parallax-container'>
+        <div className='parallax-bg' />
+        <div className='parallax-content'></div>
+        <BookCleaningForm />
+      </div>
     </div>
   )
 }

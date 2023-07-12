@@ -1,11 +1,8 @@
 .sides {
   display: flex;
   justify-content: flex-start;
-  margin-top: 350px;
+  margin-top: 20vh;
   padding-left: 130px;
-  font-family: Abel;
-  letter-spacing: 3px;
-  color: whitesmoke;
 }
 
 .header_left {
@@ -23,13 +20,13 @@
 
 .header_left h1 {
   text-align: center;
-  font-size: 65px;
+  font-size: 3.5vw;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .header_left h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 2vw;
   font-weight: 300;
   margin: 0;
 }
@@ -46,29 +43,6 @@
 
 * {
   scroll-behavior: smooth;
-}
-
-.parallax-container {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.parallax-content {
-  position: relative;
-  z-index: 2;
-}
-
-.parallax-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 115vh;
-  background-image: url('../../assets/clean_house.jpg');
-  background-size: cover;
-
-  z-index: -1;
 }
 
 @font-face {
