@@ -130,10 +130,10 @@ class BookCleaningForm extends React.Component {
     } = this.state
 
     return (
-      <div className='book-form-container'>
+      <div className='book-form-container font_style'>
         <h2>Booking Information</h2>
         <form onSubmit={this.handleSubmit}>
-          <div className='book-form-content'>
+          <div className='book-form-content '>
             <div className='book-form-left'>
               <div className='book-form-group'>
                 <div className='book-label-container-names'>

@@ -5,14 +5,14 @@
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.35);
   border-radius: 5px;
-  width: 100%; /* Updated width value */
-  margin: 0 auto;
+  width: 50%;
+  margin-top: 15vh;
+  color: whitesmoke;
 }
 
 .book-form-container h2 {
-  color: whitesmoke;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3vh;
 }
 
 .book-form-content {
@@ -42,7 +42,6 @@
 
 .book-label-container > label {
   font-weight: bold;
-  color: whitesmoke;
 }
 
 .book-input-container {

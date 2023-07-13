@@ -5,14 +5,14 @@
   justify-content: center;
 
   color: whitesmoke;
-  padding-bottom: 100px;
-  background-color: #2b4865;
+
+  padding-top: 20px;
+  background-color: #262626;
 
   font-family: Abel;
   letter-spacing: 3px;
   font-size: 20px;
   color: whitesmoke;
-  height: 100vh;
 }
 
 .about_sides {
@@ -49,7 +49,7 @@
 
 .about_content h1 {
   margin-bottom: 0px; /* Adjust the value as needed */
-  font-size: 40px;
+  font-size: 6vh;
   text-align: center;
 }
 
@@ -92,7 +92,7 @@
 }
 .squares {
   display: flex;
-  font-size: 25px;
+  font-size: 3vh;
   text-align: center;
   width: 70.5%;
 }

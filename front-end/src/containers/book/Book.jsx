@@ -32,10 +32,10 @@ const Book = () => {
   }, [])
 
   return (
-    <div className='book_content'>
-      <div className='parallax-container'>
-        <div className='parallax-bg' />
-        <div className='parallax-content'></div>
+    <div className='parallax-container'>
+      <div className='parallax-bg' />
+      <div className='parallax-content'></div>
+      <div className='book_content'>
         <BookCleaningForm />
       </div>
     </div>

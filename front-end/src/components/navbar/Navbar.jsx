@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import { Link, useNavigate } from 'react-router-dom'
+import Logo from '../../assets/logo.svg'
 
 const Navbar = () => {
   const [activeOption, setActiveOption] = useState('')
@@ -23,12 +24,15 @@ const Navbar = () => {
 
   const handleAboutClick = () => {
     handleOptionClick('/about')
-    navigate('/', { state: { scrollTo: 'about' } })
   }
 
   return (
     <nav className='navbar font_style'>
       <ul className='navbar-nav'>
+        <li className='nav-item'>
+          <img src={Logo} alt='My SVG' />
+        </li>
+
         <li className='nav-item'>
           <Link
             to='/'
@@ -39,13 +43,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li className='nav-item'>
-          <a
-            href='#about'
-            className={getNavOptionClass('/about') + ' nav-about'}
-            onClick={handleAboutClick}
+          <Link
+            to='/details'
+            className={getNavOptionClass('/details')}
+            onClick={() => handleOptionClick('/details')}
           >
             About
-          </a>
+          </Link>
         </li>
         <li className='nav-item'>
           <Link

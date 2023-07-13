@@ -4,6 +4,7 @@
   position: absolute;
   width: 100%;
   z-index: 2;
+  background-color: transparent;
 }
 
 .navbar-nav {
@@ -16,8 +17,15 @@
 
 .nav-item {
   display: inline-block;
-  margin-right: 100px;
-  padding-top: 30px;
+  margin-right: 10vh;
+  padding-top: 6vh;
+}
+
+.nav-item img {
+  width: 20vh;
+  height: auto;
+  margin-right: 30vh;
+  padding-top: 5px;
 }
 
 .nav-link,
@@ -25,7 +33,7 @@
   text-decoration: none;
   color: whitesmoke;
   font-weight: 500;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   position: relative;
   transition: color 0.3s ease;
 }

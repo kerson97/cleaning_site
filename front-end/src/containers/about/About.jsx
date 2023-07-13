@@ -34,13 +34,14 @@ const About = () => {
           <img src={tub} alt='tub' />
         </div>
         <div className='about_right'>
-          <h1>Why choose spotless?</h1>
+          <h1>Why choose Spotless?</h1>
           <ul className='list'>
             {generateListItem('Family owned and operated')}
             {generateListItem('Experienced, reliable cleaners')}
             {generateListItem('Swift booking process')}
             {generateListItem('Competitive pricing')}
             {generateListItem('Customizeable packages')}
+
             <Link to='/book' style={{ textDecoration: 'none' }}>
               <button>Book Now!</button>
             </Link>
@@ -114,7 +115,7 @@ const About = () => {
               style={{ color: '#ffffff' }}
             />
             <br />
-            Earn Points!
+            Discounts!
           </div>
         </div>
       </div>
@@ -128,6 +129,7 @@ const About = () => {
             {generateListItem('Background and reference checked')}
             {generateListItem('Industry professionals')}
             {generateListItem('Passionate about cleanliness')}
+            {generateListItem('Fun and outgoing!')}
           </ul>
         </div>
       </div>

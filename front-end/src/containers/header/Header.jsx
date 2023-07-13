@@ -25,9 +25,10 @@ const Header = () => {
         <div className='header_content'>
           <div className='sides font_style'>
             <div className='header_left'>
-              <h1>SPOTLESS.</h1>
+              {/*<h1>SPOTLESS.</h1>*/}
               <h2>
-                Bringing luxurious, affordable cleaning to Greater Victoria.
+                Bringing a world of luxurious, affordable cleaning to Greater
+                Victoria.
               </h2>
             </div>
 

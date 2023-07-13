@@ -12,10 +12,6 @@ const Services = () => {
       <div className='parallax-bg' />
       <div className='parallax-content'></div>
       <div className='services-container font_style'>
-        <div className='header-card'>
-          <h2>We Offer:</h2>
-        </div>
-
         <div className='service-card'>
           <h3>Regular Cleaning</h3>
           <p>Our regular cleaning service includes:</p>
@@ -53,7 +49,7 @@ const Services = () => {
           </ul>
         </div>
         <div className='service-card'>
-          <h3>Post-Renovation/Post-Construction Clean Up</h3>
+          <h3>Post-Reno/Post-Construction Clean Up</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <ul>
             <li>Removal of construction debris</li>
