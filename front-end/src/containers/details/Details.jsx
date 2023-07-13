@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './details.css'
-
+import '../../components/parallax/parallax.css'
+import { initParallax } from '../../components/parallax/parallax'
 const Details = () => {
+  useEffect(() => {
+    initParallax()
+  }, [])
+
   return (
     <div className='parallax-container'>
       <div className='parallax-bg' />
